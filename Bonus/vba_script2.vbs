@@ -83,7 +83,11 @@ For Valu = 2 To lastrow3
     Cells(4, 16).Value = Cells(Valu, 10).Value
     End If
 Next Valu
-sheet.Cells(1, 1) = 1 'This sets cell A1 to each sheet to 1
-Next 'This will close the loop from the top
-starting_sheet.Activate 'Activate the worksheet that was originally active  'This will bring you back to your original active sheet.
+
+'set cell A1 to each sheet to 1
+sheet.Cells(1, 1) = 1 
+'close loop
+Next 
+'activate worksheets/ original worksheet
+starting_sheet.Activate 
 End Sub
